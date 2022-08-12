@@ -1,0 +1,10 @@
+function narcissistic(number) {
+    const str = number.toString()
+    const arrOfStr = str.split('')
+    
+    const powerRes = arrOfStr.reduce((acc, rec) => {
+      return acc + Math.pow(parseInt(rec, 10), arrOfStr.length)
+    }, 0)
+    console.log(arrOfStr)
+    return powerRes === number
+}
