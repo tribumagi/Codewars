@@ -1,0 +1,12 @@
+var countSheep = function (num){
+ let sheep= 'sheep...'
+ let arrow=[];
+  for (let i=1; i<=num;i++){
+    arrow.push(i+' '+sheep);
+    
+  }
+ let result = arrow.join('');
+  return result;
+}
+
+console.log(countSheep(3));
