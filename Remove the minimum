@@ -1,0 +1,18 @@
+function removeSmallest(numbers) {
+  var outputArray = [];
+  if (numbers.length > 1) {
+    var smallest = numbers[0];
+    for (i = 1; i < numbers.length; i++) {
+      if (numbers[i] < smallest) {
+        smallest = numbers[i];
+      }
+    }
+    for (j = 0; j < numbers.length; j++) {
+      if (j === numbers.indexOf(smallest)) {
+      } else {
+        outputArray.push(numbers[j]);
+      }
+    }
+  }
+  return outputArray;
+}
